@@ -1,0 +1,14 @@
+.tile {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin: 7px 0;
+}
+
+.score {
+    text-align: center;
+    font-size: 50px;
+}
+
+.name {
+    font-weight: 500;
+}
