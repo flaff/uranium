@@ -31,7 +31,12 @@
     border-color: #E91E63;
 }
 
-.statusIcon {
+.id {
+    font-size:12px;
+}
+
+span.statusIcon {
+    font-weight: 800;
 }
 
 .options {
