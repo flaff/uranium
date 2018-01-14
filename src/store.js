@@ -2,12 +2,12 @@ import {createStore, applyMiddleware, compose} from 'redux';
 import {routerMiddleware} from 'react-router-redux';
 import thunk from 'redux-thunk';
 import createHistory from 'history/createBrowserHistory';
-import {createLogger} from 'redux-logger';
+// import {createLogger} from 'redux-logger';
 
 import combinedReducers from './reducers';
 
 const
-    DEV_ENV = (process.env.NODE_ENV === 'development'),
+    // DEV_ENV = (process.env.NODE_ENV === 'development'),
 
     history = createHistory(),
 
@@ -18,7 +18,7 @@ const
         routerMiddleware(history)
     ];
 
-DEV_ENV && middleware.push(createLogger({collapsed: true, duration: true}));
+// DEV_ENV && middleware.push(createLogger({collapsed: true, duration: true}));
 
 if (process.env.NODE_ENV === 'development') {
     const devToolsExtension = window.devToolsExtension;

@@ -1,5 +1,4 @@
 import axios from 'axios';
-import {setURLParams} from "./util";
 
 const
     GPIO_GET_VALUES_URL = 'api/gpio',

@@ -1,9 +1,8 @@
 import {getGPIOs, setGPIO} from "../api/gpio";
-import moment from 'moment';
 
 export const UPDATE_LIGHT = 'lights/UPDATE_LIGHT';
 export const REQUEST_LIGHT_CHANGE = 'lights/REQUEST_LIGHT_CHANGE';
-export const REQUEST_LIGHT_UPDATE = 'lights/REQUEST_LIGHT_UPDATE';
+// export const REQUEST_LIGHT_UPDATE = 'lights/REQUEST_LIGHT_UPDATE';
 export const UPDATE_LIGHT_FAIL = 'lights/UPDATE_LIGHT_FAIL';
 
 export const REQUEST_LIGHTS_UPDATE = 'lights/REQUEST_LIGHTS_UPDATE';

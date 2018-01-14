@@ -8,6 +8,7 @@ import store, {history} from './store';
 
 import {AppContainer} from 'react-hot-loader';
 
+import './global-css/index.css';
 import './global-css/fontawesome.css';
 import './global-css/fa-regular.css';
 import './global-css/fa-solid.css';

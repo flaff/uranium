@@ -1,0 +1,28 @@
+.weather {
+    vertical-align: middle;
+    color: inherit;
+    user-select: none;
+    text-align: left;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    align-content: flex-end;
+    height: 35px;
+}
+
+.header {
+    margin-bottom: 10px;
+    font-weight: 800;
+}
+
+.temperature {
+    font-size: 50px;
+    line-height: 35px;
+    letter-spacing: -1px;
+}
+
+.secondary {
+
+}

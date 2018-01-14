@@ -1,14 +1,35 @@
-.tile {
-    border: 1px solid lightgray;
-    border-radius: 5px;
-    margin: 7px 0;
+.station {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.header {
+    margin-bottom: 10px;
+    font-weight: 800;
 }
 
 .score {
-    text-align: center;
     font-size: 50px;
+    letter-spacing: -1px;
+    line-height: 35px;
 }
 
 .name {
-    font-weight: 500;
+    font-size: 80%;
+}
+
+.veryGood {
+    color: #007bff;
+}
+
+.good {
+    color: forestgreen;
+}
+
+.moderate {
+    color: darkorange;
+}
+
+.bad {
+    color: brown;
 }
