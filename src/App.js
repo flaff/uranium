@@ -9,13 +9,14 @@ import {Col, Container, Row} from './components/Grid';
 import classNames from 'classnames';
 
 const
-    NIGHT_TIME_HOUR = 23,
+    NIGHT_TIME_HOUR = 20,
     DAY_TIME_HOUR = 6,
     MINUTE_MS = 60000;
 
 function isNight() {
     const hour = (new Date()).getHours();
-    return (hour > NIGHT_TIME_HOUR) || (hour < DAY_TIME_HOUR);
+    console.log(hour);
+    return (hour >= NIGHT_TIME_HOUR) || (hour <= DAY_TIME_HOUR);
 }
 
 class App extends Component {

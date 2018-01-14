@@ -19,17 +19,28 @@
 }
 
 .veryGood {
-    color: #007bff;
+    color: #00d0ff;
 }
 
 .good {
-    color: forestgreen;
+    color: #a3ce14;
 }
 
 .moderate {
-    color: darkorange;
+    color: #ffc300;
 }
 
 .bad {
-    color: brown;
+    color: #ff004c;
+}
+
+.noData {
+    color: #ff5d00;
+}
+
+.noDataIcon {
+    font-size: 25px;
+    position: relative;
+    margin: -5px 10px 2px 0;
+    top: 4px;
 }

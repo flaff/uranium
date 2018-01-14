@@ -1,8 +1,12 @@
 import React from 'react';
 import styles from './Station.css';
 import moment from 'moment';
+import Icon from '../Icon/Icon';
 
 function indexToClassName(index) {
+    if (index === null) {
+        return styles.noData;
+    }
     if (index > 9) {
         return styles.bad;
     }
@@ -16,6 +20,9 @@ function indexToClassName(index) {
 }
 
 function indexToName(index) {
+    if (index === null) {
+        return 'No data';
+    }
     if (index > 9) {
         return 'Bad';
     }
@@ -29,6 +36,9 @@ function indexToName(index) {
 }
 
 function getTimeFromNow(date) {
+    if (date === null) {
+        return '0m';
+    }
     const diff = moment.utc(moment() - date),
         hours = +diff.format('HH'),
         minutes = +diff.format('mm');
@@ -41,8 +51,10 @@ const Station = props => {
         <div className={styles.station}>
             <div className={styles.header}>Air quality</div>
             <div className={indexToClassName(props.station.indexLevel)}>
-                <div className={styles.score}>{props.station.indexLevel}</div>
-                <div>{indexToName(props.station.indexLevel)}</div>
+                {props.station.indexLevel && <div className={styles.score}>{props.station.indexLevel}</div>}
+                <div>
+                    {props.station.indexLevel === null && (<Icon name="attention" className={styles.noDataIcon} />)}
+                    {indexToName(props.station.indexLevel)}</div>
             </div>
             <div className={styles.name}>{props.station.name}, {getTimeFromNow(props.station.date)}&nbsp;ago</div>
 

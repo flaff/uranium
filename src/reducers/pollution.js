@@ -1,4 +1,3 @@
-import moment from 'moment';
 import {getStation} from '../api/pollution';
 
 export const REQUEST_STATION_UPDATE = 'pollution/REQUEST_STATION_UPDATE';
@@ -9,19 +8,13 @@ export const CHANGE_STATION = 'pollution/CHANGE_STATION';
 const initialState = {
     fetching: false,
     station: {
-        id: 13,
+        id: 401,
         name: 'Kraków',
-        score: 1.5,
-        elements: [
-            {name: 'CO2', current: 100, max: 200},
-            {name: 'O3', current: 80, max: 110},
-        ],
-        date: moment()
+        indexLevel: null,
+        compounds: null,
+        date: null
     },
-    avaliableStations: [
-        {id: 13, name: 'Kraków'},
-        {id: 14, name: 'Nowa Huta'}
-    ]
+    avaliableStations: []
 };
 
 export default (state = initialState, action) => {
