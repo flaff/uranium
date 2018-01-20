@@ -2,8 +2,8 @@ import React  from 'react';
 import styles from './Light.css';
 import moment from 'moment';
 
-import {Row, Col} from '../Grid/index';
-import Icon from '../Icon/Icon';
+import {Row, Col} from '../common/Grid/index';
+import Icon from '../common/Icon/Icon';
 
 const TIME_FORMAT = 'HH[h]mm[m]';
 

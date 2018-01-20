@@ -1,0 +1,7 @@
+.inactive {
+    opacity: 0.5;
+}
+
+.digitDisplay {
+    font-family: 'Barlow Condensed', sans-serif;
+}

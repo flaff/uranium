@@ -4,11 +4,11 @@
 }
 
 .header {
-    margin-bottom: 10px;
     font-weight: 800;
+    font-size: 13px;
 }
 
-.score {
+.aqi {
     font-size: 50px;
     letter-spacing: -1px;
     line-height: 35px;
@@ -16,26 +16,6 @@
 
 .name {
     font-size: 80%;
-}
-
-.veryGood {
-    color: #00d0ff;
-}
-
-.good {
-    color: #a3ce14;
-}
-
-.moderate {
-    color: #ffc300;
-}
-
-.bad {
-    color: #ff004c;
-}
-
-.noData {
-    color: #ff5d00;
 }
 
 .noDataIcon {

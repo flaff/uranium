@@ -1,6 +1,6 @@
 import React from 'react';
 import Light from './Light';
-import {Row, Col, Container} from '../Grid';
+import {Row, Col, Container} from '../common/Grid';
 
 const LightList = props => {
     return (

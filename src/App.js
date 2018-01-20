@@ -5,7 +5,7 @@ import {Route, Link} from 'react-router-dom';
 import Home from './views/Home';
 import Settings from './views/Settings';
 import About from './views/About';
-import {Col, Container, Row} from './components/Grid';
+import {Col, Container, Row} from './components/common/Grid';
 import classNames from 'classnames';
 
 const

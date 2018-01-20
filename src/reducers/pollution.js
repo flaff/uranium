@@ -1,9 +1,7 @@
 import {getStation} from '../api/pollution';
 
-export const REQUEST_STATION_UPDATE = 'pollution/REQUEST_STATION_UPDATE';
 export const UPDATE_STATION = 'pollution/UPDATE_STATION';
 export const UPDATE_STATION_FAIL = 'pollution/UPDATE_STATION_FAIL';
-export const CHANGE_STATION = 'pollution/CHANGE_STATION';
 
 const initialState = {
     fetching: false,
@@ -11,6 +9,7 @@ const initialState = {
         id: 401,
         name: 'Kraków',
         indexLevel: null,
+        aqi: null,
         compounds: null,
         date: null
     },
@@ -20,12 +19,10 @@ const initialState = {
 export default (state = initialState, action) => {
     switch (action.type) {
         case UPDATE_STATION:
-            const {id, name, indexLevel, compounds} = action.station,
-                date = compounds.length ? compounds[0].date : null,
-                dateString = compounds.length ? compounds[0].dateString : null;
+            const {id, name, compounds, aqi, date} = action.station;
             return {
                 ...state,
-                station: {id, name, indexLevel, compounds, date, dateString}
+                station: {id, name, compounds, date, aqi}
             };
 
         default:

@@ -1,0 +1,27 @@
+.good {
+    color: #a3ce14;
+}
+
+.moderate {
+    color: #ffc300;
+}
+
+.unhealthy {
+    color: #ff5d00;
+}
+
+.unhealthy2 {
+    color: #ff004c;
+}
+
+.veryUnhealthy {
+    color: rebeccapurple;
+}
+
+.hazardous {
+    color: brown;
+}
+
+.noData {
+    color: #ff5d00;
+}

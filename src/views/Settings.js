@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Settings.css';
-import {Container, Row, Col} from '../components/Grid/index';
+import {Container, Row, Col} from '../components/common/Grid/index';
 
 export default function () {
     return (

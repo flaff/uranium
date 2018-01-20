@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import styles from './About.css';
-import {Container, Row, Col} from '../components/Grid/index';
+import {Container, Row, Col} from '../components/common/Grid/index';
 
 export default class About extends Component {
     render() {
